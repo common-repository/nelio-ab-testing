@@ -1,0 +1,77 @@
+@import "~admin-stylesheets/breakpoints";
+
+.nab-evolution-section {
+
+	&__title {
+		display: inline-block;
+		margin-top: 0;
+	}
+
+	svg#{&}__title-icon {
+		transform: translateY(3px);
+	}
+
+	$graphic-height: 20em;
+
+	&__timeline-selector {
+		margin-left: 1em;
+	}
+
+	&__timeline-graphic {
+		height: $graphic-height;
+	}
+
+	&__page-views-and-conversions {
+		display: flex;
+		flex-direction: row;
+		float: right;
+		height: 1.2em;
+		margin: 0;
+		margin-top: 3px;
+		padding: 0;
+	}
+
+	&__comparison-graphic,
+	&__improvement-graphic {
+		height: $graphic-height;
+
+		@include break-wide {
+			width: calc(50% - 1em);
+		}
+	}
+
+	@include break-wide {
+
+		&__comparison-and-improvement-graphics {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 3em;
+		}
+	}
+
+	/* stylelint-disable-next-line */
+	&__page-views-and-conversions {
+
+		&::before {
+			content: "";
+			display: block;
+			flex-grow: 1;
+		}
+	}
+
+	&__label {
+		margin-left: 1em;
+		text-transform: uppercase;
+	}
+
+	&__value {
+		font-size: 1.2em;
+		font-weight: 700;
+		margin: 0 0.2em;
+	}
+
+	&__conversion-rate {
+		vertical-align: top;
+	}
+}

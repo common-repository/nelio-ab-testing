@@ -1,0 +1,58 @@
+.nab-contextual-help {
+	$color: #0073aa;
+	$hover-color: #148ec8;
+
+	&__wrapper {
+		position: fixed;
+		bottom: 1.5em;
+		right: 1.5em;
+	}
+
+	&__toggle {
+		background: #fff !important;
+		color: $color !important;
+		border-radius: 100% !important;
+		border: 1px solid #ddd !important;
+		box-shadow: none !important;
+		height: auto !important;
+		line-height: 0 !important;
+		padding: 0 !important;
+		text-shadow: none !important;
+		transition: color 200ms ease-in-out;
+
+		> * {
+			font-size: 3em;
+			height: 1em;
+			width: 1em;
+		}
+
+		&:active,
+		&:hover,
+		&:focus {
+			color: $hover-color !important;
+		}
+	}
+
+	&__content {
+		padding: 1em;
+		width: 30em;
+	}
+
+	&__title {
+		margin-top: 0;
+	}
+
+	&__questions {
+		list-style: disc;
+		margin-left: 2em;
+	}
+
+	&__actions {
+		text-align: right;
+	}
+
+	&__tour {
+		margin: 2em 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,76 @@
+@import "~admin-stylesheets/colors";
+
+.nab-site {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0;
+	padding: 0.8em 1.2em;
+
+	&__current-site {
+		font-weight: 400;
+
+		&-help {
+			color: $color__text;
+			margin: 0 5px;
+			opacity: 0.7;
+			position: relative;
+			top: 5px;
+		}
+	}
+
+	&:nth-child(odd) {
+		background: $color__background-grey;
+	}
+
+	&:hover > * {
+		visibility: visible;
+	}
+
+	&__details {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	&__link {
+		text-decoration: none;
+
+		&--current {
+			font-weight: 700;
+		}
+	}
+
+	&__label {
+		background: $color__background-grey;
+		border: 1px solid $color__background-dark;
+		border-radius: 2px;
+		color: $color__text-dark;
+		font-size: 10px;
+		font-variant: small-caps;
+		font-weight: 400;
+		margin-left: 4px;
+		padding: 2px 5px;
+		padding-top: 0;
+		position: relative;
+		text-decoration: none;
+		text-shadow: none;
+		top: -1px;
+	}
+
+	&__limit-quota-button,
+	&__unlink-button {
+		visibility: hidden;
+		text-decoration: none !important;
+	}
+}
+
+.site-quota-dialog {
+
+	&__actions {
+		display: flex;
+		gap: 0.5em;
+		justify-content: flex-end;
+		margin-top: 0.5em;
+	}
+}

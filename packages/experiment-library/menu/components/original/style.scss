@@ -1,0 +1,34 @@
+@import "~admin-stylesheets/colors";
+
+.nab-original-menu-alternative {
+
+	&__selector {
+		display: flex;
+		flex-direction: row;
+
+		> * {
+			flex-grow: 1;
+			margin-right: 0.5em;
+			max-width: 10em;
+		}
+
+		> :last-child {
+			margin-right: 0;
+			max-width: none;
+		}
+	}
+
+	&__existing-content {
+		margin-top: 1em;
+
+		&--is-disabled {
+			filter: saturate(0);
+			opacity: 0.6;
+		}
+
+		&--is-disabled * {
+			cursor: default !important;
+			user-select: none;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"jsx": "react",
+		"lib": [ "es2021", "dom" ],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": false,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"pretty": true,
+		"removeComments": false,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"target": "es5",
+		"typeRoots": [ "node_modules/@types", "types" ],
+		"paths": {
+			"@nab/components": [ "packages/components" ],
+			"@nab/conversion-actions": [ "packages/conversion-actions" ],
+			"@nab/conversion-action-library": [
+				"packages/conversion-action-library"
+			],
+			"@nab/data": [ "packages/data" ],
+			"@nab/date": [ "packages/date" ],
+			"@nab/editor": [ "packages/editor" ],
+			"@nab/experiment-library": [ "packages/experiment-library" ],
+			"@nab/experiments": [ "packages/experiments" ],
+			"@nab/heatmap-editor": [ "packages/heatmap-editor" ],
+			"@nab/i18n": [ "packages/i18n" ],
+			"@nab/segmentation-rules": [ "packages/segmentation-rules" ],
+			"@nab/segmentation-rule-library": [
+				"packages/segmentation-rule-library"
+			],
+			"@nab/types": [ "packages/types" ],
+			"@nab/utils": [ "packages/utils" ],
+			"@safe-wordpress/*": [ "packages/safe-wordpress/*" ],
+			"@wordpress/hooks": [ "packages/types/wordpress-hooks.d.ts" ]
+		}
+	},
+	"exclude": [ "node_modules" ],
+	"compileOnSave": false,
+	"buildOnSave": false
+}

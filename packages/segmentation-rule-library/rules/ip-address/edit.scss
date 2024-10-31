@@ -1,0 +1,48 @@
+.nab-ip-address-segmentation-rule {
+	display: flex;
+	flex-direction: row;
+
+	&__value {
+		flex-grow: 1;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__action {
+		align-self: flex-end;
+		height: 30px;
+		margin-left: 5px;
+	}
+}
+
+.nab-ip-address-list {
+	margin-top: 1em;
+
+	&__items {
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+
+		&-name {
+			margin: 0;
+			margin-left: 1em;
+			margin-right: 0.5em;
+		}
+
+		.components-button.is-link:not(:disabled):not(
+		[aria-disabled="true"]
+	):hover {
+			color: #ab3c3c;
+		}
+	}
+
+	&__item-action.components-button.is-link {
+		text-decoration: none;
+	}
+}

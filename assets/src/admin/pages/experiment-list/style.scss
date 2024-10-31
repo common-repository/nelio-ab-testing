@@ -1,0 +1,120 @@
+@use "sass:color";
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+
+span.nab-experiment__icon svg {
+	height: 24px;
+	width: 24px;
+}
+
+th#type {
+	display: none;
+
+	@include break-medium {
+		display: table-cell;
+		width: 3em;
+	}
+}
+
+th#status {
+	width: 10em;
+}
+
+/* stylelint-disable-next-line */
+th#nab_page_views {
+	width: 10em;
+}
+
+/* stylelint-disable-next-line */
+th#nab_date {
+	width: 12em;
+}
+
+td.type.column-type {
+	display: none !important;
+
+	@include break-medium {
+		display: table-cell !important;
+		font-size: 2em;
+		padding-top: 2px;
+	}
+}
+
+.nab-experiment__status {
+	background: $color__background-grey;
+	border: 1px solid $color__input-border;
+	border-radius: 2px;
+	color: $color__text-dark;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	margin-left: 0.2em;
+	margin-top: 0.2em;
+	padding: 0.5em 0.8em;
+	text-decoration: none;
+	text-shadow: none;
+
+	/*
+	&--draft {
+	}
+	*/
+
+	&--paused {
+		background: $color__background-orange;
+		border-color: $color__background-orange;
+		color: $color__fill-white;
+	}
+
+	&--ready {
+		background: $color__background-orange;
+		border-color: $color__background-orange;
+		color: $color__fill-white;
+	}
+
+	&--scheduled {
+		background: $color__experiment-winner;
+		border-color: $color__experiment-winner;
+		color: $color__fill-white;
+	}
+
+	&--running {
+		animation: nab-experiment__running-animation 2s linear infinite;
+		background: $color__experiment-winner;
+		background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.125) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.125) 75%, transparent 75%, transparent);
+		background-size: 35px 35px;
+		border-color: $color__experiment-winner;
+		color: $color__fill-white;
+		text-shadow: 1px 1px 1px $color__background_black_translucent;
+	}
+
+	&--finished {
+		background: $color__experiment-finished;
+		border-color: $color__experiment-finished;
+		color: $color__fill-white;
+	}
+
+	&--trash {
+		background: $color__background-red;
+		border-color: $color__background-red;
+		color: $color__fill-white;
+	}
+}
+
+.nab-quota-meter {
+	margin-bottom: 1em;
+
+	&__bar-container {
+		background-color: color.adjust($color__background-grey, $lightness: -10%);
+	}
+}
+
+@keyframes nab-experiment__running-animation {
+
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 35px 35px;
+	}
+}

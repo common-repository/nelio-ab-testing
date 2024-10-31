@@ -1,0 +1,22 @@
+.nab-sites {
+
+	&__title {
+		padding: 1em;
+		margin: 0;
+	}
+
+	&__availability {
+		float: right;
+	}
+
+	&__list {
+		margin: 0;
+	}
+
+	.components-spinner {
+		float: none;
+		margin: 0;
+		margin-left: 10px;
+		vertical-align: bottom;
+	}
+}

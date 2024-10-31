@@ -1,0 +1,11 @@
+a.nab-disabled-link {
+	cursor: not-allowed;
+}
+
+.nab-highlight {
+	background: rgba(85, 165, 230, 0.5);
+	border: 2px solid rgb(85, 165, 230);
+	position: absolute;
+	pointer-events: none;
+	z-index: 99999999;
+}

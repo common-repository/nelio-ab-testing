@@ -1,0 +1,69 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/icons";
+
+.nab-segmentation-rule {
+	border: none;
+
+	code,
+	pre {
+		background: none;
+		color: $color__text-green;
+		padding: 0;
+	}
+
+	& + & {
+		border-top: 1px solid $color__border-editor-light;
+	}
+
+	&__view {
+		display: flex;
+		flex-direction: row;
+		font-weight: 400;
+		min-height: 1.5em;
+		padding-right: 2em;
+		width: 100%;
+	}
+
+	&__icon {
+		font-size: 1.6em;
+		height: 1em;
+		margin-top: -0.1em;
+		margin-right: 0.4em;
+		min-width: 1em;
+		width: 1em;
+
+		&--invalid {
+			color: $color__background-red;
+		}
+	}
+
+	&__actual-view {
+		flex-grow: 1;
+		width: 100%;
+
+		a {
+			color: inherit;
+			pointer-events: none;
+			text-decoration: none;
+		}
+	}
+
+	.components-base-control + .components-base-control {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+
+	&__edit,
+	&__delete-button.components-button.is-link {
+		margin-left: 2em;
+	}
+
+	&__delete-button {
+		position: relative;
+		left: -9999em;
+	}
+
+	&:hover &__delete-button {
+		position: static;
+	}
+}

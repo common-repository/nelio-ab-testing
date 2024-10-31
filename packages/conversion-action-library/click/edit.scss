@@ -1,0 +1,21 @@
+.nab-click-conversion-action {
+	display: flex;
+	flex-direction: row;
+
+	&__value {
+		flex-grow: 1;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button {
+		flex-grow: 0;
+		flex-shrink: 0;
+		height: auto;
+		margin: 0;
+		margin-left: 0.5em;
+		width: auto;
+	}
+}

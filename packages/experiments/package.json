@@ -1,0 +1,31 @@
+{
+	"name": "@nab/experiments",
+	"version": "1.0.0",
+	"description": "Experiment API for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/uuid": "^8.3.4",
+		"@types/wordpress__data": "6.0.0",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/hooks": "file:../safe-wordpress/hooks",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"lodash": "^4.17.21",
+		"uuid": "^8.3.2"
+	}
+}

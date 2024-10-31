@@ -1,0 +1,72 @@
+@import "~admin-stylesheets/colors";
+
+.nab-experiment-scope {
+
+	p {
+		margin-top: 0;
+	}
+
+	&__rule-list {
+		margin: 0;
+		max-height: 20em;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	&__rule-list-item {
+		padding: 1em 1em 1em 0;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			"type  action"
+			"value value";
+	}
+
+	&__active-rule-type {
+		grid-area: type;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__active-rule-value {
+		grid-area: value;
+		margin-top: 0.5em;
+	}
+
+	&__remove-rule-action {
+		grid-area: action;
+		left: -9999em;
+		margin-left: 1em;
+		position: relative;
+	}
+
+	&__rule-list-item:hover {
+
+		.nab-experiment-scope__remove-rule-action {
+			position: static;
+		}
+	}
+
+	&__new-rule-form {
+		margin-top: 1.5em;
+		padding-top: 1.5em;
+		border-top: 1px solid $color__border-lighter;
+	}
+
+	&__new-rule-value.components-base-control {
+		margin-bottom: 0;
+
+		> * {
+			margin-bottom: 0;
+		}
+	}
+
+	&__add-rule-action-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		margin-top: 10px;
+	}
+}

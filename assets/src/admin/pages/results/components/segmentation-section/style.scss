@@ -1,0 +1,17 @@
+@import "~admin-stylesheets/colors";
+
+svg.nab-segmentation-section__title-icon {
+	transform: translateY(3px);
+}
+
+.nab-segmentation-section__content {
+	border: 1px solid $color__border-editor-light;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.nab-current-segment-info {
+	padding: 1em;
+	width: 100%;
+}

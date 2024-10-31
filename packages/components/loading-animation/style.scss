@@ -1,0 +1,30 @@
+.nab-loading-animation {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	&__logo {
+		max-width: 180px;
+		width: 100%;
+
+		path {
+			fill: transparent;
+			stroke: #555d66;
+			stroke-dasharray: 150;
+			stroke-dashoffset: 160;
+			stroke-width: 0.3px;
+			animation: nab-loading-animation 1.5s ease infinite alternate;
+		}
+	}
+
+	&__text {
+		font-size: 1.4em;
+	}
+}
+
+@keyframes nab-loading-animation {
+
+	0% {
+		stroke-dashoffset: 0;
+	}
+}

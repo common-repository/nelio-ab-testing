@@ -1,0 +1,34 @@
+{
+	"name": "@nab/segmentation-rule-library",
+	"version": "1.0.0",
+	"description": "Segmenatation rules library for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/components": "file:../components",
+		"@nab/i18n": "file:../i18n",
+		"@nab/utils": "file:../utils",
+		"@nab/segmentation-rules": "file:../segmentation-rules",
+		"@nab/types": "file:../types"
+	},
+	"devDependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@types/lodash": "^4.14.171",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/compose": "file:../safe-wordpress/compose",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"classnames": "^2.3.1",
+		"lodash": "^4.17.21"
+	}
+}

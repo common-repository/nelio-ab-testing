@@ -1,0 +1,17 @@
+.nab-date-time-picker {
+
+	&__clear-date.components-button.is-link {
+		display: block;
+		margin: 0;
+		margin-left: auto;
+		margin-right: 8px;
+	}
+
+	.components-popover__content {
+		padding: 10px;
+	}
+
+	.components-datetime__date-help-button {
+		display: none;
+	}
+}

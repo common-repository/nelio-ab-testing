@@ -1,0 +1,66 @@
+@import "~admin-stylesheets/colors";
+
+.nab-addons {
+
+	&--loading {
+
+		.components-popover__content {
+			display: flex;
+			min-height: 5em;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__container {
+		min-width: 30em;
+		margin: 1em;
+		text-align: left;
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+	}
+
+	&__container-title {
+		font-size: 1.3em;
+		font-weight: 500;
+		line-height: 1.4;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-bottom: calc(8px);
+		padding: 0;
+	}
+
+	&__product {
+		display: flex;
+		justify-content: space-between;
+
+		&-name {
+			font-weight: 700;
+		}
+
+		&-details {
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+		}
+
+		&--enabled {
+			background: $color__fill-white;
+			border: 1px solid $color__border-light;
+			border-radius: 2px;
+			box-sizing: border-box;
+			color: $color__border-light;
+			display: block;
+			text-align: center;
+			font-weight: 400;
+			text-decoration: none;
+			text-shadow: none;
+			margin: 0;
+			padding: 6px 7px;
+		}
+	}
+}

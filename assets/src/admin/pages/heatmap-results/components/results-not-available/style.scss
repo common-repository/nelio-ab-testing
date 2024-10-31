@@ -1,0 +1,26 @@
+@import "~admin-stylesheets/colors";
+
+.nab-heatmap-no-longer-available {
+	background: #fff;
+	border-radius: 2px;
+	box-shadow:
+		0 2px 0 #ddd,
+		0 2px 10px 0 $color__box-shadow;
+	display: block;
+	margin: 5em auto 1em;
+	max-width: 40em;
+	padding: 2em;
+	text-align: center;
+
+	&__logo {
+		max-width: 20em;
+	}
+
+	&__title {
+		font-size: 18px;
+	}
+
+	&__explanation {
+		font-size: 15px;
+	}
+}

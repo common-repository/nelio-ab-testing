@@ -1,0 +1,94 @@
+@import "~admin-stylesheets/colors";
+
+.nab-css-selector-finder {
+	border: none;
+	height: 100%;
+	width: 100%;
+
+	max-height: calc(100% - 32px);
+	max-width: calc(100% - 32px);
+
+	.components-modal__header > button {
+		display: none;
+	}
+
+	.components-modal__content > div:last-child {
+		height: 100%;
+		width: 100%;
+	}
+
+	.components-modal__content::before,
+	.components-modal__content::after {
+		display: none;
+	}
+
+	&__header,
+	&__header-left,
+	&__header-center,
+	&__header-right {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__header {
+		font-weight: 400;
+		width: 100%;
+	}
+
+	&__header-left {
+		flex-grow: 0;
+
+		select {
+			padding-right: 2em;
+		}
+	}
+
+	&__header-center {
+		flex-grow: 1;
+		justify-content: center;
+		margin: 0 0.5em;
+	}
+
+	&__header-right {
+		flex-grow: 0;
+	}
+
+	&__value {
+		margin-right: 6px;
+		max-width: 50em;
+		width: 100%;
+	}
+
+	&__action {
+		align-items: center;
+		margin-right: 5px;
+	}
+
+	&__iframe {
+		height: 100%;
+		width: 100%;
+		flex-grow: 1;
+	}
+
+	.components-modal__content {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		.components-modal__header {
+			background: $color__background-black;
+			border: none;
+			margin: 0;
+			padding: 16px;
+		}
+
+		.components-modal__header .components-modal__header-heading {
+			width: 100%;
+		}
+	}
+
+	.components-base-control .components-base-control__field {
+		margin: 0;
+	}
+}

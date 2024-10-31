@@ -1,0 +1,10 @@
+.nab-heatmap-results-header__variant {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	min-width: 15em;
+
+	* {
+		margin-bottom: 0 !important;
+	}
+}

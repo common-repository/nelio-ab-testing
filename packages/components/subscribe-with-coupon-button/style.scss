@@ -1,0 +1,14 @@
+.nab-subscribe-with-coupon-button {
+	background: #d24633 !important;
+	box-shadow: none !important;
+	color: #fff !important;
+	font-weight: 700;
+
+	&:focus {
+		box-shadow: 0 0 0 var(--wp-admin-border-width-focus) #d24633 !important;
+	}
+
+	&:hover {
+		opacity: 0.9 !important;
+	}
+}

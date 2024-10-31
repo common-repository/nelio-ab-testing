@@ -1,0 +1,40 @@
+{
+	"name": "@nab/experiment-library",
+	"version": "1.0.0",
+	"description": "Experiment library for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@nab/components": "file:../components",
+		"@nab/conversion-actions": "file:../conversion-actions",
+		"@nab/data": "file:../data",
+		"@nab/experiments": "file:../experiments",
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__core-data": "^2.4.5",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__media-utils": "^3.0.0",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/core-data": "file:../safe-wordpress/core-data",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/hooks": "file:../safe-wordpress/hooks",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/media-utils": "file:../safe-wordpress/media-utils",
+		"classnames": "^2.3.1",
+		"lodash": "^4.17.21"
+	}
+}

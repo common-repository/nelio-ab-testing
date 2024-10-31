@@ -1,0 +1,41 @@
+{
+	"name": "@nab/heatmap-editor",
+	"version": "1.0.0",
+	"description": "Heatmap Editor in Nelio A/B Testing",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/components": "file:../components",
+		"@nab/conversion-action-library": "file:../conversion-action-library",
+		"@nab/data": "file:../data",
+		"@nab/date": "file:../date",
+		"@nab/editor": "file:../editor",
+		"@nab/experiment-library": "file:../experiment-library",
+		"@nab/segmentation-rule-library": "file:../segmentation-rule-library",
+		"@nab/segmentation-rules": "file:../segmentation-rules",
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__notices": "^3.3.0",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/dom-ready": "file:../safe-wordpress/dom-ready",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"lodash": "^4.17.21"
+	}
+}

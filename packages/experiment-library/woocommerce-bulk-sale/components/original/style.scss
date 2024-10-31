@@ -1,0 +1,37 @@
+.nab-woocommerce-bulk-sale-original {
+	font-size: 1.3em;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+
+	&__filter-action {
+		margin-left: 0.4em;
+	}
+
+	&__product-filters {
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+
+		> div {
+			flex: 1 1 0;
+		}
+
+		select[multiple] {
+			height: auto !important;
+			overflow-y: auto !important;
+			padding: 0 !important;
+
+			option {
+				white-space: normal;
+			}
+		}
+
+		select[multiple] + .components-input-control__suffix {
+			display: none;
+		}
+	}
+
+	&__explanation {
+		font-style: italic;
+	}
+}

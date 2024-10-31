@@ -1,0 +1,57 @@
+.nab-quota-purchase {
+
+	&--loading {
+
+		.components-popover__content {
+			display: flex;
+			min-height: 5em;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		min-width: 20em;
+		margin: 1em 1em 0 1em;
+		text-align: left;
+	}
+
+	&__footer-container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 0.5em 1em 1em 1em;
+	}
+
+	&__buttons {
+		display: flex;
+		margin-left: 5px;
+
+		.components-button {
+			align-items: center;
+			height: 2.5em;
+		}
+	}
+
+	&__total {
+		display: block;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+
+	&__total-value {
+		font-style: initial;
+		margin-left: 5px;
+		font-weight: 700;
+		font-size: 1.4em;
+	}
+
+	&__help {
+		text-align: left;
+		font-style: italic;
+		padding: 0 1em;
+		color: #888;
+	}
+}

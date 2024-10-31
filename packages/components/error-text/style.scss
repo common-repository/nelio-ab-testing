@@ -1,0 +1,12 @@
+@import "~admin-stylesheets/colors";
+
+.nab-error-text {
+	color: $color__text-red;
+	display: block;
+	margin: 0;
+
+	svg {
+		transform: translateY(3px);
+		margin-right: 0.3em;
+	}
+}

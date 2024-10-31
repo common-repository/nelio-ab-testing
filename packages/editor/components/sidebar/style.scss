@@ -1,0 +1,32 @@
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nab-edit-experiment-sidebar {
+	box-sizing: border-box;
+
+	&__element-wrapper {
+		box-sizing: border-box;
+		height: 100%;
+		overflow-y: auto;
+		padding-bottom: 6em;
+
+		.components-panel__body:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__section-title {
+		border-bottom: 1px solid $color__border-editor;
+		margin: 2em 0 0;
+		padding: 0 1rem 1em;
+
+		@include break-medium {
+			display: none;
+		}
+	}
+
+	svg#{&}__section-title-icon {
+		transform: translateY(3px);
+	}
+}

@@ -1,0 +1,15 @@
+@import "~admin-stylesheets/colors";
+
+.nab-experiment-management {
+	border-top: none;
+
+	&__trash {
+
+		button.components-button.is-large {
+			border-color: $color__text-red;
+			color: $color__text-red;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+}

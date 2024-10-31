@@ -1,0 +1,27 @@
+.nab-item-select-control {
+
+	.components-form-token-field__input-container {
+		background: #fff;
+	}
+
+	.components-form-token-field__help,
+	.components-form-token-field__label {
+		display: none;
+	}
+
+	ul.components-form-token-field__suggestions-list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&--has-single-value {
+
+		input[type="text"].components-form-token-field__input {
+			height: 0 !important;
+			min-height: 0 !important;
+			min-width: 0 !important;
+			opacity: 0;
+			width: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import "colors";
+
+@mixin desaturate-svg() {
+
+	path {
+
+		&.background,
+		&.icon_svg__background {
+			fill: transparent !important;
+		}
+
+		&.grey,
+		&.icon_svg__grey {
+			fill: $color__fill-grey !important;
+		}
+
+		&.black,
+		&.icon_svg__black {
+			fill: $color__fill-black !important;
+		}
+
+		&.white,
+		&.icon_svg__white {
+			fill: $color__fill-white !important;
+		}
+	}
+}

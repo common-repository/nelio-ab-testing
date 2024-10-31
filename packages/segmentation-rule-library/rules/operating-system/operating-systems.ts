@@ -1,0 +1,16 @@
+export const operatingSystemList = [
+	'Android',
+	'Chromium OS',
+	'Debian',
+	'Linux',
+	'Mint',
+	'SUSE',
+	'Ubuntu',
+	'iOS',
+	'Mac OS X',
+	'Windows Phone',
+	'Windows 7',
+	'Windows Vista',
+	'Windows XP',
+	'Windows',
+] as const;

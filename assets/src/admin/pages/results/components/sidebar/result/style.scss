@@ -1,0 +1,84 @@
+.nab-experiment-result-summary {
+	border-top: none;
+
+	&__title {
+		display: block;
+
+		span:last-child {
+			margin-bottom: 2em;
+		}
+	}
+
+	&__title-text {
+		font-weight: 600;
+	}
+
+	&__uniqueness-selector,
+	&__goal-selector,
+	&__segment-selector {
+		display: block;
+		margin-top: 1em;
+	}
+
+	&__icon,
+	&__text,
+	&__confidence {
+		text-align: center;
+		display: block;
+	}
+
+	&__confidence {
+		margin-top: -1em;
+	}
+
+	&__conversion-rates {
+		font-variant: all-small-caps;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	&__control {
+		margin-top: 0;
+	}
+
+	&__best-variant-improvement {
+		margin-left: 5px;
+		font-weight: 400;
+		font-size: 0.9em;
+	}
+
+	&__best-variant-improvement > svg {
+		transform: translateY(6px);
+		width: 12px;
+	}
+
+	&__public-result {
+
+		&-url {
+			display: flex;
+			justify-content: space-between;
+
+			&-input {
+				flex-grow: 1;
+			}
+		}
+
+		&-description {
+			font-size: 12px;
+			color: #757575;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.nab-loading-animation {
+
+		svg {
+			max-width: 120px;
+		}
+
+		&__text {
+			font-size: 1.2em;
+		}
+	}
+}

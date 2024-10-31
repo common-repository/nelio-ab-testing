@@ -1,0 +1,37 @@
+.nab-billing {
+
+	&__title {
+		margin: 0;
+		padding: 1em;
+	}
+
+	&__action {
+		position: absolute;
+		right: 1em;
+		text-decoration: none;
+		top: 1em;
+	}
+
+	&__container {
+		border-spacing: 0;
+		width: 100%;
+	}
+
+	&__reference,
+	&__date {
+		padding: 0.8em 1.2em;
+		text-align: left;
+	}
+
+	&__total {
+		padding: 0.8em 1.2em;
+		text-align: right;
+	}
+
+	.components-spinner {
+		float: none;
+		margin: 0;
+		margin-left: 10px;
+		vertical-align: bottom;
+	}
+}

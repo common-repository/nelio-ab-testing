@@ -1,0 +1,10 @@
+@use "sass:color";
+@import "~admin-stylesheets/colors";
+
+.nab-quota-meter__bar-container {
+	background-color: color.adjust($color__background-grey, $lightness: -10%);
+}
+
+.experiment-overview__container .components-spinner {
+	float: none;
+}

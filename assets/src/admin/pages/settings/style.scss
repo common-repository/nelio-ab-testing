@@ -1,0 +1,41 @@
+#wpbody .description {
+	color: #646970;
+	font-size: 13px;
+
+	> * {
+		color: #646970;
+		font-size: 13px;
+	}
+}
+
+#nab-basic-tab-content {
+
+	h2 {
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		&:not(:first-child) {
+			margin-top: 3em;
+		}
+	}
+
+	table {
+		margin-left: 2em;
+		width: calc(100% - 2em);
+	}
+
+	.nelio-ab-testing-help {
+		margin-top: 3px;
+	}
+
+	input[type="range"] {
+		margin-top: 6px;
+	}
+
+	code {
+		background: none;
+		color: #070;
+		margin: 0;
+		padding: 0;
+	}
+}

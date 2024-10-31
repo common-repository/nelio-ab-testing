@@ -1,0 +1,60 @@
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+
+.nab-goal-list {
+	background: $color__background-grey;
+	margin: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 6em;
+
+	@include break-mobile {
+		width: 10em;
+	}
+
+	@include break-small {
+		width: 12em;
+	}
+
+	@include break-medium {
+		width: 6em;
+	}
+
+	@include break-large {
+		width: 8em;
+	}
+
+	@include break-xlarge {
+		width: 15em;
+	}
+
+	&__item {
+		border-left: 4px solid transparent;
+		margin: 0;
+		padding: 1em;
+
+		&--is-active {
+			background: $color__background-editor;
+			border-left-color: $color__border-blue;
+		}
+	}
+
+	&__item button {
+		display: block;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__item--is-active button,
+	&__item--is-active button:disabled {
+		color: $color__text;
+		font-weight: 400;
+		opacity: 1;
+	}
+
+	&__item button:focus {
+		box-shadow: none;
+	}
+}

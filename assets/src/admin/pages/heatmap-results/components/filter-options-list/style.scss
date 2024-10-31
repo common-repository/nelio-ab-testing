@@ -1,0 +1,82 @@
+@import "~admin-stylesheets/colors";
+
+.nab-filter-option {
+	margin-bottom: 8px !important;
+
+	.components-checkbox-control__input[type="checkbox"] {
+		border-radius: 50%;
+		height: 20px;
+		width: 20px;
+
+		+ .dashicon,
+		+ svg {
+			display: none;
+		}
+	}
+
+	&--header {
+		font-weight: 400;
+		margin-bottom: 16px !important;
+
+		.components-checkbox-control__input[type="checkbox"] {
+			border-radius: 0;
+
+			+ svg {
+				display: block;
+			}
+		}
+	}
+
+	&--deactivated {
+		opacity: 0.6;
+	}
+
+	.components-base-control__field {
+		display: flex;
+
+		.components-checkbox-control__label {
+			flex-grow: 1;
+			width: 5em;
+		}
+	}
+
+	&-label {
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__name {
+			overflow: hidden;
+			padding-right: 1em;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&__amount-container {
+			flex-shrink: 0;
+		}
+	}
+}
+
+.nab-bar {
+
+	&__container {
+		border: 1px solid #e2e4e7;
+		margin-left: 1em;
+		line-height: 1;
+		height: 1em;
+		width: 6em;
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	&__value {
+		background: #e2e4e7;
+		height: 1em;
+		line-height: 1;
+		display: inline-block;
+		transition: 200ms ease-in-out;
+	}
+}

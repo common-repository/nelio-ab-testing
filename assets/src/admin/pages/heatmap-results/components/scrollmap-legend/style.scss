@@ -1,0 +1,80 @@
+.nab-scrollmap-legend {
+
+	&__container {
+		margin-top: 2em;
+		position: relative;
+	}
+
+	&__scale {
+		background: linear-gradient(to right, #000 0%, #000f7f 20%, #00bcff 40%, #00ff4d 60%, #ff0 80%, #f00 100%);
+		border: 1px solid #e2e4e7;
+		height: 1em;
+		width: 100%;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		font-size: x-small;
+		text-transform: uppercase;
+	}
+
+	&__percent {
+		position: absolute;
+		top: -4px;
+		width: 1px;
+		height: 4px;
+		background: #e2e4e7;
+
+		&::before {
+			position: absolute;
+			top: -15px;
+			right: 0;
+			transform: translateX(50%);
+			font-size: xx-small;
+			font-weight: 400;
+		}
+
+		&--0 {
+
+			&::before {
+				left: 0;
+				content: "0%";
+				transform: translateX(0%);
+			}
+		}
+
+		&--25 {
+			left: 25%;
+
+			&::before {
+				content: "25%";
+			}
+		}
+
+		&--50 {
+			left: 50%;
+
+			&::before {
+				content: "50%";
+			}
+		}
+
+		&--75 {
+			left: 75%;
+
+			&::before {
+				content: "75%";
+			}
+		}
+
+		&--100 {
+			left: 100%;
+
+			&::before {
+				content: "100%";
+				transform: translateX(0%);
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.nab-experiment-management {
+
+	&__status-value {
+		display: flex;
+		align-items: center;
+	}
+
+	&__draft-status-info {
+		margin-left: 0.5em;
+
+		svg {
+			transform: translateY(3px);
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "@nab/i18n",
+	"version": "1.0.0",
+	"description": "Internationalization library with helper functions for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"lodash": "^4.17.21"
+	}
+}

@@ -1,0 +1,21 @@
+.nelio-ab-testing-clipboard-button {
+	display: flex;
+	position: relative;
+
+	.components-button.has-icon {
+		padding: 0;
+		margin: 0;
+		margin-left: 0.5em;
+		min-width: 0;
+		height: auto;
+	}
+
+	&__text-copied {
+		bottom: 0;
+		padding: 0.5em 1em;
+		position: absolute;
+		right: 0;
+		transform: translateY(calc(100% + 5px));
+		z-index: 9999;
+	}
+}

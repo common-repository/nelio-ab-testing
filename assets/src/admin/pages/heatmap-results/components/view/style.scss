@@ -1,0 +1,46 @@
+@import "~admin-stylesheets/colors";
+
+.nab-heatmap-results {
+
+	&__loader {
+		align-items: center;
+		background: $color__background-black;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	&__adblock-explanation {
+		max-width: 25em;
+		z-index: 2;
+	}
+
+	&__iframe {
+		border: 0;
+		height: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		width: 100%;
+		z-index: 1;
+
+		&--tablet {
+			width: 720px;
+			height: 1080px;
+		}
+
+		&--smartphone {
+			width: 320px;
+			height: 480px;
+		}
+
+		&--is-hidden {
+			z-index: 0;
+		}
+	}
+}

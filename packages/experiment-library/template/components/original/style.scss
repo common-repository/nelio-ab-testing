@@ -1,0 +1,15 @@
+.nab-template-original-alternative {
+	display: flex;
+	flex-direction: row;
+
+	> * {
+		flex-grow: 1;
+		margin-right: 0.5em;
+		max-width: 10em;
+	}
+
+	> :last-child {
+		margin-right: 0;
+		max-width: none;
+	}
+}

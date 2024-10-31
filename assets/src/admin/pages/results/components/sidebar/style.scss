@@ -1,0 +1,13 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nab-results-experiment-sidebar {
+	border-left: 1px solid $color__border-editor;
+	box-sizing: border-box;
+
+	&__element-wrapper {
+		box-sizing: border-box;
+		height: 100%;
+		overflow-y: auto;
+	}
+}

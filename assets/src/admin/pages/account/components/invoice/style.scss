@@ -1,0 +1,34 @@
+@import "~admin-stylesheets/colors";
+
+.nab-invoice {
+
+	&:nth-child(odd) {
+		background: $color__background-grey;
+	}
+
+	&__reference,
+	&__date {
+		padding: 0.8em 1.2em;
+		text-align: left;
+	}
+
+	&__total {
+		padding: 0.8em 1.2em;
+		text-align: right;
+
+		&-value--refunded {
+			text-decoration: line-through;
+		}
+	}
+
+	&__link {
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	&__label {
+		color: $color__text-disabled;
+		margin-right: 0.5em;
+		text-decoration: none;
+	}
+}

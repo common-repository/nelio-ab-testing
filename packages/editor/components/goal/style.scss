@@ -1,0 +1,24 @@
+@import "~admin-stylesheets/colors";
+
+.nab-current-goal-info {
+	padding: 1em;
+	width: 100%;
+
+	&__header {
+		align-items: baseline;
+		display: flex;
+		flex-direction: row;
+
+		.components-base-control {
+			flex-grow: 1;
+		}
+
+		.components-button {
+			height: auto;
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin: 0;
+			margin-left: 0.5em;
+		}
+	}
+}

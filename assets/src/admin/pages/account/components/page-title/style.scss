@@ -1,0 +1,18 @@
+.nelio-ab-testing-page-title {
+	position: relative;
+	width: 100%;
+
+	&__support-key {
+		align-items: center;
+		display: flex;
+		float: right;
+		font-weight: 400;
+		font-size: 0.7rem;
+
+		code {
+			color: #070;
+			font-size: 0.7rem;
+			margin-left: 0.5em;
+		}
+	}
+}

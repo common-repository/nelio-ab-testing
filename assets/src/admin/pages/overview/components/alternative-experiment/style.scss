@@ -1,0 +1,156 @@
+@import "~admin-stylesheets/colors";
+
+$screenshot-width: 14;
+$screenshot-height: 12;
+
+.nab-experiment {
+	background: $color__fill-white;
+	border-radius: 2px;
+	box-shadow: 0 1px 1px 0 $color__box-shadow;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	height: auto;
+	position: relative;
+	transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover {
+		box-shadow: 0 2px 10px 0 $color__box-shadow;
+		background: $color__fill-white;
+		transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&__link {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__goals {
+		cursor: pointer;
+		text-align: center;
+		display: inline-block;
+		margin-left: 0.5em;
+		z-index: 2;
+	}
+
+	&__goal-switch {
+		display: inline-block;
+		height: auto;
+		min-width: 0 !important;
+		padding: 0 !important;
+		position: relative;
+		width: auto;
+	}
+
+	&__header {
+		position: relative;
+		margin-bottom: 3px;
+	}
+
+	&__title {
+		padding: 0.5em 1.5em 0 0 !important;
+		font-size: 1.1em !important;
+		font-weight: 600 !important;
+		margin-top: -10px !important;
+		line-height: 1.5 !important;
+	}
+
+	&__icon {
+		font-size: 20px;
+		vertical-align: text-top;
+		margin-right: 5px;
+		width: 1em;
+	}
+
+	&__status {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		top: 10px;
+		right: 0;
+		z-index: 2;
+		transition: background-color 200ms ease-in-out;
+
+		&--loading {
+			background-color: $color__fill-light-grey;
+		}
+
+		&--testing {
+			background-color: $color__experiment-testing;
+		}
+
+		&--possible-winner {
+			background-color: $color__experiment-possible-winner;
+		}
+
+		&--winner {
+			background-color: $color__experiment-winner;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 0.5em;
+	}
+
+	&__screenshot {
+		border: 1px solid $color__border-light;
+		grid-area: screenshot;
+		height: ($screenshot-height - 0.5) * 1em;
+		margin: 0;
+		margin-right: 0;
+		width: $screenshot-width * 1em;
+	}
+
+	&__data {
+		margin: 0;
+		padding: 0 1em;
+		min-height: 10em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__data-item {
+		display: flex;
+		flex-direction: column;
+		max-width: 135px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 8px;
+	}
+
+	&__data-measure {
+		font-size: 0.8em;
+		display: block;
+		text-transform: uppercase;
+		color: $color__text-disabled;
+		font-weight: 400;
+		order: 2;
+		line-height: 1.2;
+		margin-top: 5px;
+		width: 12em;
+	}
+
+	&__data-value {
+		display: block;
+		font-size: 2em;
+		font-weight: 600;
+	}
+
+	&__graphic {
+		flex-grow: 1;
+		min-width: 20em;
+		min-height: 10em;
+		width: 0;
+	}
+}

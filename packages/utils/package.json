@@ -1,0 +1,37 @@
+{
+	"name": "@nab/utils",
+	"version": "1.0.0",
+	"description": "Utils library for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/date": "file:../date"
+	},
+	"devDependencies": {
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/dom-ready": "file:../safe-wordpress/dom-ready",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"@types/lodash": "^4.14.171",
+		"@types/store": "^2.0.2",
+		"@types/uuid": "^8.3.4",
+		"@types/wordpress__data": "^4.6.10",
+		"@types/wordpress__notices": "^3.3.0",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"store": "^2.0.12",
+		"uuid": "^8.3.2"
+	}
+}

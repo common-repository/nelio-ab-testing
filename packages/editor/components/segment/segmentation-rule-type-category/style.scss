@@ -1,0 +1,44 @@
+@import "~admin-stylesheets/icons";
+
+.nab-segmentation-rule-type-category {
+
+	&__toggle {
+		border: 1px solid rgb(0, 117, 175);
+		margin: 0 0.2em;
+		padding: 0 !important;
+		width: 2em;
+		font-size: 1.2em;
+		height: auto;
+		min-width: fit-content !important;
+
+		svg {
+			height: inherit;
+			width: inherit;
+		}
+	}
+
+	&__menu svg {
+
+		@include desaturate-svg;
+		width: 1.3em;
+	}
+
+	&__toggle:not(:hover) svg {
+
+		@include desaturate-svg;
+	}
+
+
+	&__toggle[disabled] svg {
+
+		@include desaturate-svg;
+		opacity: 0.2;
+	}
+
+	&__menu[disabled] svg {
+
+		@include desaturate-svg;
+		opacity: 0.2;
+		width: 1.3em;
+	}
+}

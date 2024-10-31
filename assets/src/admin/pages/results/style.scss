@@ -1,0 +1,32 @@
+@import "~admin-stylesheets/colors";
+
+#wpfooter,
+#wpbody-content > div:not(.experiment-results):not(#screen-meta) {
+	display: none;
+}
+
+#wpwrap {
+	background: $color__background-editor;
+}
+
+#wpbody-content {
+	padding: 0;
+}
+
+#wpcontent {
+	padding-left: 0;
+}
+
+ul#adminmenu a.wp-has-current-submenu::after,
+ul#adminmenu > li.current > a.current::after {
+	border-right-color: $color__background-editor;
+}
+
+#results {
+	background: $color__background-editor;
+	bottom: 0;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+}

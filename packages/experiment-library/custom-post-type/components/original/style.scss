@@ -1,0 +1,43 @@
+@import "~admin-stylesheets/colors";
+
+.nab-original-cpt-alternative {
+
+	&__selector {
+		display: flex;
+		flex-direction: row;
+
+		> * {
+			flex-grow: 1;
+			margin-right: 0.5em;
+			max-width: 10em;
+		}
+
+		> :last-child {
+			margin-right: 0;
+			max-width: none;
+		}
+	}
+
+	&__existing-content,
+	&__run-as-inline {
+		margin-top: 1em;
+
+		&--is-disabled {
+			filter: saturate(0);
+			opacity: 0.6;
+		}
+
+		&--is-disabled * {
+			cursor: default !important;
+			user-select: none;
+		}
+	}
+
+	&__beta-help {
+		background: $color__text;
+		border-radius: 2px;
+		color: $color__fill-white;
+		font-size: 0.9em;
+		padding: 2px 4px;
+	}
+}

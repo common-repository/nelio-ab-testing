@@ -1,0 +1,47 @@
+.nab-enterprise-upgrade-form {
+
+	&--loading {
+
+		.components-popover__content {
+			display: flex;
+			min-height: 5em;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__container {
+		min-width: 20em;
+		margin: 1em;
+		text-align: left;
+	}
+
+	.components-base-control__label {
+		font-size: 1.3em;
+	}
+
+	.components-radio-control__option {
+		align-items: flex-start;
+		margin-top: 1em;
+		display: flex;
+	}
+
+	&__product {
+		display: inline-block;
+
+		&-price {
+			margin-left: 0.5em;
+		}
+
+		&-description {
+			display: block;
+		}
+	}
+
+	&__button-container {
+		padding: 0 1em 1em;
+		display: flex;
+		gap: 0.5em;
+		justify-content: flex-end;
+	}
+}

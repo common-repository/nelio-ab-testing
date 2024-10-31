@@ -1,0 +1,55 @@
+@import "~admin-stylesheets/colors";
+
+svg.nab-alternative-section__title-icon {
+	transform: translateY(3px);
+}
+
+.nab-tracked-element {
+	border: 1px solid $color__border-editor-light;
+	padding: 1em;
+	margin: 0;
+
+	&__p {
+		margin-bottom: 1em;
+	}
+
+	&__post {
+		display: flex;
+		width: 100%;
+
+		&-type-selector {
+			flex-grow: 1;
+			margin-right: 0.5em;
+			max-width: 10em;
+		}
+
+		&-selector {
+			flex-grow: 1;
+		}
+	}
+
+	&__url {
+		display: flex;
+		margin-bottom: 0.8em;
+		width: 100%;
+
+		&-value {
+			flex-grow: 1;
+			margin-right: 0.5em;
+
+			.components-base-control__field {
+				margin-bottom: 0;
+			}
+		}
+
+		&-preview {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__mode {
+		margin-top: 2em;
+	}
+}

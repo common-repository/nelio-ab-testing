@@ -1,0 +1,39 @@
+@import "~admin-stylesheets/colors";
+
+.nab-segmentation-rule {
+
+	&__view {
+		display: flex;
+		flex-direction: row;
+		font-weight: 400;
+		min-height: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	&__view:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&__icon {
+		font-size: 1.6em;
+		height: 1em;
+		margin-top: -0.1em;
+		margin-right: 0.6em;
+		min-width: 1em;
+		width: 1em;
+
+		&--invalid {
+			color: $color__background-red;
+		}
+	}
+
+	&__actual-view {
+		flex-grow: 1;
+
+		a {
+			color: inherit;
+			pointer-events: none;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nab-results-experiment-header {
+	align-items: stretch;
+	background: $color__background-editor;
+	border-bottom: 1px solid $color__border-editor;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	height: $editor-bar-height;
+	justify-content: space-between;
+	left: 0;
+	padding: 8px;
+	z-index: 30;
+
+	&__info {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		min-width: 5em;
+		width: 100%;
+
+		h1 {
+			line-height: 1.3;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	&__right-promo-button {
+		justify-self: flex-end;
+		margin-left: auto;
+	}
+
+	&__experiment-icon {
+		height: ($editor-bar-height - 16) * 0.8;
+		min-width: ($editor-bar-height - 16) * 0.8;
+		width: ($editor-bar-height - 16) * 0.8;
+	}
+
+	&__settings {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1em;
+	}
+
+	&__stop-button.components-button.is-button {
+		height: 33px;
+		line-height: 32px;
+		font-size: 13px;
+	}
+
+	&__settings--is-saving {
+		animation: pulse 500ms infinite;
+		color: $color__text-disabled;
+		display: flex;
+		padding: 0 1.5em;
+
+		svg {
+			margin-right: 4px;
+		}
+	}
+
+	&__title {
+		margin: 0 0.5em;
+		font-weight: 400;
+	}
+}

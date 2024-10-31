@@ -1,0 +1,22 @@
+.nab-experiment-scope {
+
+	p {
+		margin-top: 0;
+	}
+
+	&__rule-list {
+		margin: 0;
+		max-height: 20em;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	&__rule-list-item {
+		padding: 1em 1em 1em 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"type"
+			"value";
+	}
+}

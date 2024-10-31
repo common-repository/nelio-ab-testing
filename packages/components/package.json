@@ -1,0 +1,52 @@
+{
+	"name": "@nab/components",
+	"version": "1.0.0",
+	"description": "Components library for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/data": "file:../data",
+		"@nab/date": "file:../date",
+		"@nab/experiments": "file:../experiments",
+		"@nab/i18n": "file:../i18n",
+		"@nab/segmentation-rules": "file:../segmentation-rules",
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@safe-wordpress/api-fetch": "file:../safe-wordpress/api-fetch",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/compose": "file:../safe-wordpress/compose",
+		"@safe-wordpress/core-data": "file:../safe-wordpress/core-data",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/dom-ready": "file:../safe-wordpress/dom-ready",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"@types/intro.js": "^3.0.2",
+		"@types/lodash": "^4.14.171",
+		"@types/react-select": "^3.0.4",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__notices": "3.5.0",
+		"axios": "^0.27.2",
+		"classnames": "^2.3.1",
+		"intro.js": "^5.1.0",
+		"lodash": "^4.17.21",
+		"rc-tooltip": "^5.1.1",
+		"react-select": "^5.3.2",
+		"react-select-async-paginate": "^0.6.1",
+		"react-transition-group": "^4.4.2",
+		"uuid": "^8.3.2"
+	}
+}

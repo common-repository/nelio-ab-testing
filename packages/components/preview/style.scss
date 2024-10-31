@@ -1,0 +1,53 @@
+@import "~admin-stylesheets/colors";
+
+.nab-preview {
+	overflow: hidden;
+	padding: 0;
+	pointer-events: none;
+	position: relative;
+	text-decoration: none;
+
+	&__image {
+
+		&--loading {
+			display: none;
+		}
+
+		&--ready {
+			background: $color__background-grey;
+			height: 500%;
+			overflow: hidden;
+			position: relative;
+			transform-origin: top left;
+			transform: scale(0.2);
+			width: 500%;
+		}
+	}
+
+	&__textual-feedback {
+		align-items: center;
+		background: $color__background-grey;
+		color: $color__text-disabled;
+		display: flex;
+		flex-direction: row;
+		font-size: 1.5em;
+		height: 100%;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.nab-loading-animation {
+		max-width: 50%;
+
+		path {
+			stroke-width: 0.5px;
+			stroke: $color__text-disabled;
+		}
+
+		&__text {
+			font-size: 0.6em;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

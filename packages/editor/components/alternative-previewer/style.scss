@@ -1,0 +1,35 @@
+.nab-alternative-previewer {
+	background: #fff;
+	height: calc(100vh - 2em);
+	max-height: none;
+	max-width: none;
+	width: calc(100vw - 2em);
+
+	&__iframe {
+		flex-grow: 1;
+	}
+
+	.components-modal__content {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		.components-modal__header {
+			border: none;
+			margin: 0;
+		}
+
+		.components-modal__header + div {
+			display: flex;
+			flex-grow: 1;
+		}
+
+		.components-modal__header .components-modal__header-heading {
+			width: 100%;
+		}
+	}
+
+	.components-base-control .components-base-control__field {
+		margin: 0;
+	}
+}

@@ -1,0 +1,12 @@
+@import "~admin-stylesheets/colors";
+
+svg.nab-goal-section__title-icon {
+	transform: translateY(3px);
+}
+
+.nab-edit-experiment-goal-section__content {
+	border: 1px solid $color__border-editor-light;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}

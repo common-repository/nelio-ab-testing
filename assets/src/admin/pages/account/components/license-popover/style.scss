@@ -1,0 +1,20 @@
+.nab-license-form {
+
+	.components-popover__content {
+		padding: 1em;
+	}
+
+	&__text-control {
+		flex-grow: 1;
+		min-width: 18em;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button {
+		float: right;
+		margin-top: 1em;
+	}
+}

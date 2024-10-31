@@ -1,0 +1,37 @@
+{
+	"name": "@nab/conversion-action-library",
+	"version": "1.0.0",
+	"description": "Conversion actions library for Nelio A/B Testing.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/components": "file:../components",
+		"@nab/conversion-actions": "file:../conversion-actions",
+		"@nab/data": "file:../data",
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/compose": "file:../safe-wordpress/compose",
+		"@safe-wordpress/core-data": "file:../safe-wordpress/core-data",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__core-data": "2.4.5",
+		"@types/wordpress__data": "6.0.0",
+		"classnames": "^2.3.1",
+		"lodash": "^4.17.21"
+	}
+}

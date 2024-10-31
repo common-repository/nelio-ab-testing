@@ -1,0 +1,29 @@
+@import "~admin-stylesheets/colors";
+
+.nab-url-alternative-version {
+
+	&__url {
+		display: flex;
+		margin-bottom: 0.8em;
+		width: 100%;
+
+		&-value {
+			flex-grow: 1;
+			margin-right: 0.5em;
+
+			.components-base-control__field {
+				margin-bottom: 0;
+			}
+		}
+
+		&-preview {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.components-external-link {
+				height: 32px;
+			}
+		}
+	}
+}

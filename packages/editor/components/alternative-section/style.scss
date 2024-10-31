@@ -1,0 +1,154 @@
+@import "~admin-stylesheets/colors";
+
+svg.nab-alternative-section__title-icon {
+	transform: translateY(3px);
+}
+
+.nab-alternative-list {
+	border: 1px solid $color__border-editor-light;
+	border-bottom: none;
+	margin: 0;
+
+	&__alternative {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 1em;
+	}
+
+	&__alternative-letter {
+		border-radius: 50%;
+		color: $color__text-alternative;
+		display: inline-block;
+		flex-grow: 0;
+		font-size: 1.5rem;
+		height: 1em;
+		line-height: 1;
+		margin: 0;
+		margin-right: 0.5em;
+		padding: 0.3em;
+		text-align: center;
+		transition:
+			250ms background ease-in-out,
+			250ms color ease-in-out;
+		width: 1em;
+	}
+
+	&__alternative-edit {
+		flex-grow: 1;
+	}
+
+	&__alternative-help {
+		flex-grow: 0;
+		margin-left: 0.5em;
+		opacity: 0.7;
+		padding: 0.2em 0;
+		width: 1em;
+	}
+
+	.nab-alternative-list__alternative--original {
+		border-bottom: 1px solid $color__border-editor-light;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+	}
+
+	.nab-alternative-list__alternative--original &__alternative-letter {
+		background: $color__background-alternative-a;
+	}
+
+	$colors: (
+		$color__background-alternative-b,
+		$color__background-alternative-c,
+		$color__background-alternative-d,
+		$color__background-alternative-e,
+		$color__background-alternative-f,
+		$color__background-alternative-a
+	);
+	$i: 1;
+
+	@each $color in $colors {
+		.nab-animated-list__item:nth-child(6n + #{$i}) &__alternative-letter {
+			background: $color;
+
+			&--disabled {
+				background: $color__border-light;
+			}
+		}
+		$i: $i + 1;
+	}
+
+	&__alternative &__alternative-edit &__alternative-actions {
+		display: flex;
+		min-height: 1.4em;
+		margin: 0;
+		position: relative;
+		left: -9999em;
+
+		li {
+			margin: 0;
+
+			&:not(:last-child)::after {
+				color: $color__text-disabled;
+				content: "|";
+				display: inline;
+				margin: 0 0.2em;
+			}
+
+			button.components-button.is-link.is-destructive:hover {
+				color: $color__text-light-red;
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__alternative:hover &__alternative-edit &__alternative-actions {
+		position: static;
+	}
+
+	&.nab-animated-list--has-item-exiting &__alternative:hover &__alternative-edit &__alternative-actions {
+		position: relative;
+	}
+}
+
+.nab-edit-experiment-alternative-section__new-variant-container {
+	border: 1px solid $color__border-editor-light;
+	border-top: none;
+	margin: 0;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+/* Animations when deleting alternatives */
+.nab-animated-list__item {
+	margin: 0;
+	padding: 0;
+
+	&--has-animation-exit {
+		max-height: 14em;
+		transition:
+			opacity 300ms ease-in-out,
+			max-height 350ms 150ms ease-in-out;
+	}
+
+	&--has-animation-exit-active {
+		max-height: 0;
+		opacity: 0;
+	}
+
+	&--has-animation-exit-active + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter,
+	&--has-animation-exit-active + & + & + & + & + & + & + & + & + & + & + & + & .nab-alternative-list__alternative-letter {
+		transition: 250ms background ease-in-out;
+		color: transparent;
+		background: $color__border-light;
+	}
+}

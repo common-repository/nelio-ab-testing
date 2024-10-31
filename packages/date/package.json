@@ -1,0 +1,21 @@
+{
+	"name": "@nab/date",
+	"version": "1.0.0",
+	"description": "Date functions",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"devDependencies": {
+		"@safe-wordpress/date": "file:../safe-wordpress/date",
+		"moment": "^2.29.3"
+	}
+}

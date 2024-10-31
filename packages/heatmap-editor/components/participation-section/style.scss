@@ -1,0 +1,41 @@
+@import "~admin-stylesheets/colors";
+
+svg.nab-participation-section__title-icon {
+	transform: translateY(3px);
+}
+
+.nab-edit-experiment-participation-section {
+
+	&__strategy {
+		float: right;
+		font-weight: 400;
+	}
+
+	&__content {
+		border: 1px solid $color__border-editor-light;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		width: 100%;
+
+		> p:first-child {
+			margin-top: 0;
+		}
+
+		&--empty {
+			margin-left: 1em;
+		}
+
+		&--free {
+			display: block;
+			margin: 0;
+			padding-left: 1em;
+		}
+
+		&-action {
+			margin-bottom: 1em;
+			text-align: center;
+		}
+	}
+}

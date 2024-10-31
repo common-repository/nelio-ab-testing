@@ -1,0 +1,13 @@
+.nab-cookie-segmentation-rule {
+	display: flex;
+	flex-direction: row;
+
+	&__name,
+	&__value {
+		flex-grow: 1;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+}

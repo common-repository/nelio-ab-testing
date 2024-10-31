@@ -1,0 +1,69 @@
+$account-profile-size: 48px;
+
+.nab-info {
+	height: auto !important;
+	padding: 1em;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 1em;
+	}
+
+	&__container {
+		display: table;
+		vertical-align: top;
+	}
+
+	&__profile {
+		display: table-cell;
+		vertical-align: top;
+		width: $account-profile-size;
+	}
+
+	&__picture {
+		font-size: $account-profile-size;
+		height: 1em;
+		margin-top: 4px;
+		overflow: hidden;
+		width: 1em;
+	}
+
+	&__actual-picture {
+		background-position: center;
+		background-size: cover;
+		border-radius: 50%;
+		height: 1em;
+		position: relative;
+		width: 1em;
+	}
+
+	&__details {
+		display: table-cell;
+		padding-left: 1em;
+		vertical-align: top;
+	}
+
+	&__name,
+	&__email,
+	&__creation-date,
+	&__license {
+		line-height: 2;
+		margin: 0;
+	}
+
+	&__change-license,
+	&__remove-license {
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+
+	&__name {
+		font-size: 1.1em;
+		font-weight: 700;
+	}
+
+	&__icon {
+		margin-right: 5px;
+		vertical-align: text-bottom;
+	}
+}

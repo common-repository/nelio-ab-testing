@@ -1,0 +1,32 @@
+{
+	"name": "@nab/data",
+	"version": "1.0.0",
+	"description": "General data.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"cro",
+		"testing",
+		"ab"
+	],
+	"homepage": "https://neliosoftware.com/testing/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-ab-testing",
+	"bugs": {},
+	"dependencies": {
+		"@nab/date": "file:../date",
+		"@nab/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__notices": "^3.3.0",
+		"@safe-wordpress/api-fetch": "file:../safe-wordpress/api-fetch",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"lodash": "^4.17.21"
+	}
+}
